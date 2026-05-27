@@ -35,7 +35,8 @@
 </script>
 <style>
   html { scroll-behavior: smooth; }
-  body { font-family: 'Inter', sans-serif; background:#fafcff; color:#292929; -webkit-font-smoothing:antialiased; }
+  body { font-family: 'Inter', sans-serif; background:#fafcff; color:#292929; -webkit-font-smoothing:antialiased; padding-bottom: 5.5rem; }
+  body.modal-open #sticky-cta { display: none; }
   .num-tag { font-feature-settings:"tnum"; letter-spacing:.02em; }
   .gradient-text {
     background: linear-gradient(90deg,#578cff 0%,#292929 60%);
@@ -378,6 +379,20 @@
   </div>
 </footer>
 
+<!-- STICKY BOTTOM CTA -->
+<div id="sticky-cta" class="fixed bottom-3 sm:bottom-5 left-1/2 -translate-x-1/2 z-40 px-3 sm:px-0 w-full sm:w-auto max-w-md">
+  <div class="bg-white/95 backdrop-blur border border-soft2 rounded-2xl shadow-card px-3 py-2.5 sm:px-4 sm:py-3 flex items-center gap-3">
+    <div class="hidden sm:block text-left pr-2 border-r border-soft2">
+      <div class="num-tag text-sm font-extrabold text-ink leading-none">07 Juin · 20:00</div>
+      <div class="text-[11px] text-mute mt-1">Heure de Paris</div>
+    </div>
+    <button type="button" data-open-modal class="cta-btn flex-1 sm:flex-none inline-flex items-center justify-center gap-2 bg-accent text-white font-bold px-5 py-3 rounded-xl text-sm shadow-cta whitespace-nowrap">
+      S'INSCRIRE GRATUITEMENT
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</div>
+
 <!-- INSCRIPTION MODAL -->
 <div id="inscription-modal" class="fixed inset-0 z-[100] hidden items-center justify-center p-4 sm:p-6" aria-modal="true" role="dialog" aria-labelledby="modal-title">
   <div data-close-modal class="absolute inset-0 bg-ink/70 backdrop-blur-sm transition-opacity"></div>
@@ -417,11 +432,13 @@
     modal.classList.remove('hidden');
     modal.classList.add('flex');
     document.documentElement.style.overflow = 'hidden';
+    document.body.classList.add('modal-open');
   }
   function closeModal() {
     modal.classList.add('hidden');
     modal.classList.remove('flex');
     document.documentElement.style.overflow = '';
+    document.body.classList.remove('modal-open');
   }
 
   openBtns.forEach(b => b.addEventListener('click', openModal));
