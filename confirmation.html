@@ -56,20 +56,20 @@
 <body class="bg-paper text-ink">
 
 <!-- TOP BANNER -->
-<div class="bg-ink text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wide">
+<div class="bg-ink text-white text-[11px] sm:text-xs py-1.5 px-4 text-center font-medium tracking-wide">
   ✅ TON INSCRIPTION EST CONFIRMÉE — RDV LE DIMANCHE 07 JUIN À 20H00
 </div>
 
-<!-- NAV -->
-<header class="border-b border-soft2/60 bg-paper/80 backdrop-blur sticky top-0 z-40">
-  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+<!-- NAV (hidden on mobile) -->
+<header class="hidden sm:block border-b border-soft2/60 bg-paper/80 backdrop-blur sticky top-0 z-40">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-3 flex items-center justify-between">
     <a href="#" class="flex items-center gap-2">
       <div class="w-9 h-9 rounded-xl bg-ink flex items-center justify-center">
         <span class="text-paper font-extrabold tracking-tighter text-lg">N</span>
       </div>
       <span class="font-bold text-ink tracking-tight">naiom<span class="text-accent">.</span></span>
     </a>
-    <div class="hidden sm:flex items-center gap-2 bg-white border border-soft2 rounded-full px-4 py-2 shadow-card">
+    <div class="flex items-center gap-2 bg-white border border-soft2 rounded-full px-4 py-2 shadow-card">
       <div class="num-tag text-sm font-bold text-ink">07 Juin · 20:00</div>
       <span class="text-xs text-mute">Heure de Paris</span>
     </div>
@@ -82,20 +82,19 @@
     <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-soft3 rounded-full blur-3xl opacity-50"></div>
   </div>
 
-  <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-8 sm:pt-10 pb-6 text-center">
-    <div class="inline-flex items-center gap-3">
-      <div class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent shadow-cta check-pulse">
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-5 sm:pt-8 pb-4 sm:pb-6 text-center">
+    <div class="inline-flex items-center gap-2 sm:gap-3">
+      <div class="inline-flex items-center justify-center w-9 h-9 sm:w-12 sm:h-12 rounded-full bg-accent shadow-cta check-pulse">
+        <svg width="18" height="18" class="sm:w-[22px] sm:h-[22px]" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
       </div>
-      <span class="inline-block bg-soft1 text-accent text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Inscription confirmée</span>
+      <span class="inline-block bg-soft1 text-accent text-[10px] sm:text-xs font-bold uppercase tracking-widest px-2.5 py-1 sm:px-3 sm:py-1.5 rounded-full">Inscription confirmée</span>
     </div>
 
-    <h1 class="mt-5 text-2xl sm:text-4xl font-extrabold tracking-tight leading-[1.1]">
-      Félicitations, <span class="text-accent">tu as réservé ta place</span>
+    <h1 class="mt-3 sm:mt-4 text-[1.5rem] sm:text-3xl lg:text-4xl font-extrabold tracking-tight leading-[1.15]">
+      <span class="text-ink">Félicitations,</span> <span class="text-accent">tu as réservé ta place.</span>
     </h1>
-    <p class="mt-3 text-base sm:text-lg text-mute leading-relaxed">
-      Pour l'<span class="text-ink font-semibold">Atelier Privé Expert IA</span> le
-      <span class="text-ink font-semibold">07 Juin à 20h</span>.
+    <p class="mt-2 sm:mt-3 text-sm sm:text-base text-mute leading-relaxed">
+      Pour l'<span class="text-ink font-semibold">Atelier Privé Expert IA</span> le <span class="text-ink font-semibold">07 Juin à 20h</span>.
     </p>
   </div>
 </section>
