@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Inscription confirmée — Atelier Privé Expert IA | Naiom Agency</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:'#292929', paper:'#fafcff', accent:'#578cff', accent2:'#9cc3ff',
+          soft1:'#f0f6ff', soft2:'#e6efff', soft3:'#d1e3ff', coral:'#f6d6cf', mute:'#636363',
+          whatsapp:'#25D366',
+        },
+        fontFamily: { sans:['Inter','sans-serif'] },
+        boxShadow: {
+          card:'0 10px 40px -10px rgba(41,41,41,0.08)',
+          cta: '0 12px 32px -8px rgba(87,140,255,0.45)',
+          wa:  '0 12px 32px -8px rgba(37,211,102,0.45)',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family:'Inter',sans-serif; background:#fafcff; color:#292929; -webkit-font-smoothing:antialiased; }
+  .num-tag { font-feature-settings:"tnum"; letter-spacing:.02em; }
+  .cta-btn { transition: all .25s ease; }
+  .cta-btn:hover { transform: translateY(-2px); }
+  .step-line::after {
+    content:''; position:absolute; left:1.45rem; top:3rem; bottom:-1.5rem;
+    width:2px; background: linear-gradient(180deg,#578cff,#d1e3ff 80%,transparent);
+  }
+  .step-line:last-child::after { display:none; }
+  .check-pulse { animation: scale-in .6s ease forwards; }
+  @keyframes scale-in {
+    0% { transform: scale(0); opacity:0; }
+    60% { transform: scale(1.15); opacity:1; }
+    100% { transform: scale(1); }
+  }
+</style>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- TOP BANNER -->
+<div class="bg-ink text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wide">
+  ✅ TON INSCRIPTION EST CONFIRMÉE — RDV LE DIMANCHE 07 JUIN À 20H00
+</div>
+
+<!-- NAV -->
+<header class="border-b border-soft2/60 bg-paper/80 backdrop-blur sticky top-0 z-40">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <div class="w-9 h-9 rounded-xl bg-ink flex items-center justify-center">
+        <span class="text-paper font-extrabold tracking-tighter text-lg">N</span>
+      </div>
+      <span class="font-bold text-ink tracking-tight">naiom<span class="text-accent">.</span></span>
+    </a>
+    <div class="hidden sm:flex items-center gap-2 bg-white border border-soft2 rounded-full px-4 py-2 shadow-card">
+      <div class="num-tag text-sm font-bold text-ink">07 Juin · 20:00</div>
+      <span class="text-xs text-mute">Heure de Paris</span>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-soft3 rounded-full blur-3xl opacity-50"></div>
+  </div>
+
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-12 text-center">
+    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent shadow-cta check-pulse">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+    </div>
+
+    <span class="mt-8 inline-block bg-soft1 text-accent text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Inscription confirmée</span>
+
+    <h1 class="mt-5 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05]">
+      Félicitations,<br/>
+      <span class="text-accent">tu as réservé ta place</span>
+    </h1>
+    <p class="mt-6 text-lg text-mute leading-relaxed">
+      Pour l'<span class="text-ink font-semibold">Atelier Privé Expert IA</span> le
+      <span class="text-ink font-semibold">07 Juin à 20h</span>.
+    </p>
+
+    <!-- date pill -->
+    <div class="mt-8 inline-flex items-center gap-4 bg-white border border-soft2 rounded-2xl px-5 py-3 shadow-card">
+      <div class="text-center">
+        <div class="text-[10px] uppercase tracking-widest text-mute font-semibold">Dim.</div>
+        <div class="num-tag text-2xl font-extrabold leading-none text-ink">07</div>
+        <div class="text-[10px] uppercase tracking-widest text-mute font-semibold mt-0.5">Juin</div>
+      </div>
+      <div class="h-10 w-px bg-soft2"></div>
+      <div class="text-left">
+        <div class="num-tag text-xl font-extrabold text-ink leading-tight">20:00</div>
+        <div class="text-[11px] text-mute">Heure de Paris</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="py-12 sm:py-16">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8">
+    <div class="text-center mb-12">
+      <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-bold">
+        <span class="w-8 h-px bg-accent"></span>
+        Étapes importantes
+        <span class="w-8 h-px bg-accent"></span>
+      </div>
+      <h2 class="mt-4 text-2xl sm:text-4xl font-extrabold tracking-tight">
+        3 étapes pour recevoir<br/>le <span class="text-accent">lien du Live</span>
+      </h2>
+    </div>
+
+    <div class="space-y-6">
+      <!-- STEP 1 — WhatsApp (priority) -->
+      <div class="step-line relative">
+        <div class="bg-white border-2 border-whatsapp/30 rounded-3xl p-6 sm:p-8 shadow-card">
+          <div class="flex items-start gap-5">
+            <div class="num-tag w-11 h-11 rounded-2xl bg-whatsapp text-white flex items-center justify-center font-extrabold text-lg shrink-0">1</div>
+            <div class="flex-1">
+              <div class="flex items-center gap-2 mb-1">
+                <span class="text-[11px] font-bold uppercase tracking-widest text-whatsapp">Indispensable</span>
+                <span class="text-[11px] font-bold text-mute">·</span>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-mute">100% gratuit</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-extrabold leading-tight">
+                Rejoins le groupe WhatsApp
+              </h3>
+              <p class="mt-2 text-mute leading-relaxed">
+                C'est <span class="text-ink font-semibold">ici qu'on enverra le lien de connexion</span> le jour J. Sans ça, tu ne pourras pas participer.
+              </p>
+              <a href="http://l.postlix.com/ai" class="cta-btn mt-5 inline-flex items-center justify-center gap-3 bg-whatsapp text-white font-bold px-6 py-3.5 rounded-2xl shadow-wa w-full sm:w-auto">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2zm0 18.13c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.264 8.264 0 01-1.26-4.36c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 012.41 5.83c0 4.54-3.7 8.24-8.23 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.42-.14-.01-.31-.01-.48-.01-.17 0-.43.06-.66.31-.23.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+                Rejoindre le groupe WhatsApp
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 2 — Carte -->
+      <div class="step-line relative">
+        <div class="bg-white border border-soft2 rounded-3xl p-6 sm:p-8 hover:border-accent transition shadow-card">
+          <div class="flex items-start gap-5">
+            <div class="num-tag w-11 h-11 rounded-2xl bg-soft1 text-accent flex items-center justify-center font-extrabold text-lg shrink-0">2</div>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-extrabold leading-tight">
+                Télécharge ta carte d'invitation
+              </h3>
+              <p class="mt-2 text-mute leading-relaxed">
+                Ta carte d'invitation gratuite <span class="text-ink font-semibold">pour pouvoir participer à l'Atelier Privé</span>.
+              </p>
+              <a href="http://l.postlix.com/carte" class="cta-btn mt-5 inline-flex items-center justify-center gap-3 bg-ink text-white font-semibold px-6 py-3.5 rounded-2xl w-full sm:w-auto">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+                Obtenir ma carte
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STEP 3 — Calendrier -->
+      <div class="step-line relative">
+        <div class="bg-white border border-soft2 rounded-3xl p-6 sm:p-8 hover:border-accent transition shadow-card">
+          <div class="flex items-start gap-5">
+            <div class="num-tag w-11 h-11 rounded-2xl bg-soft1 text-accent flex items-center justify-center font-extrabold text-lg shrink-0">3</div>
+            <div class="flex-1">
+              <h3 class="text-xl sm:text-2xl font-extrabold leading-tight">
+                Ajoute l'évènement à ton calendrier
+              </h3>
+              <p class="mt-2 text-mute leading-relaxed">
+                En 1 clic, <span class="text-ink font-semibold">pour ne pas l'oublier</span>.
+              </p>
+              <a href="http://l.postlix.com/calendrier" class="cta-btn mt-5 inline-flex items-center justify-center gap-3 bg-white border-2 border-ink text-ink font-semibold px-6 py-3.5 rounded-2xl w-full sm:w-auto hover:bg-ink hover:text-white transition">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Ajouter à mon calendrier
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- reassurance -->
+    <div class="mt-12 bg-soft1 border border-soft2 rounded-2xl p-5 sm:p-6 flex items-start gap-4">
+      <div class="w-10 h-10 rounded-xl bg-white flex items-center justify-center shrink-0">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#578cff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4M12 16h.01"/></svg>
+      </div>
+      <p class="text-sm text-ink leading-relaxed">
+        <span class="font-bold">Un email de confirmation est en route.</span>
+        <span class="text-mute">Vérifie ton dossier <span class="text-ink font-semibold">Spam / Promotions</span> et ajoute-nous à tes contacts pour ne rien manquer.</span>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="mt-12 border-t border-soft2/60 bg-white">
+  <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-ink flex items-center justify-center">
+          <span class="text-paper font-extrabold tracking-tighter text-base">N</span>
+        </div>
+        <span class="font-bold text-ink tracking-tight">naiom<span class="text-accent">.</span></span>
+      </a>
+      <div class="flex items-center gap-5 text-sm text-mute">
+        <a href="https://inscription.naiomagency.com/mentions" class="hover:text-ink transition">Mentions Légales</a>
+        <span class="w-px h-3 bg-soft2"></span>
+        <a href="https://inscription.naiomagency.com/confidentialite" class="hover:text-ink transition">Politique de confidentialité</a>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-mute leading-relaxed max-w-4xl">
+      Ce site ne fait pas partie du site YouTube™, Google™, Facebook™, Google Inc. ou Facebook Inc. De plus, ce site n'est PAS approuvé par YouTube™, Google™ ou Facebook™ en aucune façon. FACEBOOK™ est une marque de commerce de FACEBOOK, Inc. GOOGLE™ et YOUTUBE™ sont des marques de commerce de GOOGLE Inc.
+    </p>
+    <p class="mt-4 text-xs text-mute">www.inscription.naiomagency.com © 2026 — All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>

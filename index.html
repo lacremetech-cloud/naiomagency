@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Atelier Privé — Devenir Expert IA | Naiom Agency</title>
+<meta name="description" content="Atelier privé en ligne 100% gratuit. Dimanche 07 juin à 20h00. Accède aux coulisses de l'Agence IA #1 et repars avec les solutions que nos clients paient 5 000€ à 15 000€." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:    '#292929',
+          paper:  '#fafcff',
+          accent: '#578cff',
+          accent2:'#9cc3ff',
+          soft1:  '#f0f6ff',
+          soft2:  '#e6efff',
+          soft3:  '#d1e3ff',
+          coral:  '#f6d6cf',
+          mute:   '#636363',
+        },
+        fontFamily: { sans: ['Inter','sans-serif'] },
+        boxShadow: {
+          card:   '0 10px 40px -10px rgba(41,41,41,0.08)',
+          cta:    '0 12px 32px -8px rgba(87,140,255,0.45)',
+        },
+      },
+    },
+  };
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Inter', sans-serif; background:#fafcff; color:#292929; -webkit-font-smoothing:antialiased; }
+  .num-tag { font-feature-settings:"tnum"; letter-spacing:.02em; }
+  .gradient-text {
+    background: linear-gradient(90deg,#578cff 0%,#292929 60%);
+    -webkit-background-clip: text; background-clip: text; color: transparent;
+  }
+  .pulse-dot { animation: pulse 2s infinite; }
+  @keyframes pulse {
+    0%,100% { opacity:1; transform:scale(1); }
+    50%     { opacity:.4; transform:scale(1.4); }
+  }
+  .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 18px 40px -8px rgba(87,140,255,.55); }
+  .cta-btn { transition: all .25s ease; }
+</style>
+</head>
+<body class="bg-paper text-ink">
+
+<!-- TOP BANNER -->
+<div class="bg-ink text-white text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wide">
+  <span class="inline-block w-2 h-2 rounded-full bg-accent2 pulse-dot mr-2 align-middle"></span>
+  ATELIER PRIVÉ EN LIGNE — DIMANCHE 07 JUIN À 20H00 (Heure de Paris) — 100% GRATUIT
+</div>
+
+<!-- NAV -->
+<header class="border-b border-soft2/60 bg-paper/80 backdrop-blur sticky top-0 z-40">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+    <a href="#" class="flex items-center gap-2">
+      <div class="w-9 h-9 rounded-xl bg-ink flex items-center justify-center">
+        <span class="text-paper font-extrabold tracking-tighter text-lg">N</span>
+      </div>
+      <span class="font-bold text-ink tracking-tight">naiom<span class="text-accent">.</span></span>
+    </a>
+    <a href="#inscription" class="hidden sm:inline-flex cta-btn items-center gap-2 bg-accent text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-cta">
+      S'inscrire gratuitement
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="relative overflow-hidden">
+  <div class="absolute inset-0 -z-10">
+    <div class="absolute -top-32 -left-32 w-[480px] h-[480px] bg-soft3 rounded-full blur-3xl opacity-60"></div>
+    <div class="absolute -top-20 right-0 w-[420px] h-[420px] bg-coral rounded-full blur-3xl opacity-40"></div>
+  </div>
+
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 pt-12 sm:pt-20 pb-16 sm:pb-24">
+    <!-- date pill -->
+    <div class="inline-flex items-center gap-3 bg-white border border-soft2 rounded-full px-4 py-2 shadow-card">
+      <span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-accent text-white">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+      </span>
+      <span class="text-xs sm:text-sm font-semibold tracking-wide text-ink">ATELIER PRIVÉ — DEVENIR EXPERT IA</span>
+      <span class="text-xs font-bold text-accent">100% GRATUIT</span>
+    </div>
+
+    <h1 class="mt-8 text-[2.6rem] sm:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.02]">
+      Ne te fais pas <span class="line-through decoration-coral decoration-[6px] underline-offset-2">remplacer</span><br/>
+      par l'<span class="gradient-text">IA</span>.<br/>
+      Deviens celui qui en <span class="text-accent">tire profit</span>.
+    </h1>
+
+    <p class="mt-8 text-lg sm:text-xl text-mute max-w-2xl leading-relaxed">
+      Accède aux coulisses de l'<span class="text-ink font-semibold">Agence IA #1</span> et repars avec les solutions que nos clients paient
+      <span class="text-ink font-semibold">5 000€ à 15 000€</span>.
+    </p>
+
+    <!-- chips -->
+    <div class="mt-8 flex flex-wrap gap-2">
+      <span class="inline-flex items-center gap-2 bg-soft1 text-ink text-sm font-medium px-4 py-2 rounded-full">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Sans compétences techniques
+      </span>
+      <span class="inline-flex items-center gap-2 bg-soft1 text-ink text-sm font-medium px-4 py-2 rounded-full">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Ni capital
+      </span>
+      <span class="inline-flex items-center gap-2 bg-soft1 text-ink text-sm font-medium px-4 py-2 rounded-full">
+        <span class="w-1.5 h-1.5 rounded-full bg-accent"></span> Ni prospection
+      </span>
+    </div>
+
+    <!-- date block + CTA -->
+    <div id="inscription" class="mt-12 grid sm:grid-cols-[auto_1fr] gap-6 items-center bg-white border border-soft2 rounded-3xl p-6 sm:p-8 shadow-card max-w-3xl">
+      <div class="flex items-center gap-5">
+        <div class="text-center">
+          <div class="text-[10px] uppercase tracking-widest text-mute font-semibold">Dim.</div>
+          <div class="num-tag text-5xl font-extrabold leading-none text-ink">07</div>
+          <div class="text-[10px] uppercase tracking-widest text-mute font-semibold mt-1">Juin</div>
+        </div>
+        <div class="h-16 w-px bg-soft2"></div>
+        <div>
+          <div class="text-xs uppercase tracking-widest text-mute font-semibold">En direct</div>
+          <div class="num-tag text-3xl font-extrabold text-ink leading-tight">20:00</div>
+          <div class="text-xs text-mute">Heure de Paris</div>
+        </div>
+      </div>
+      <a href="#inscription-form" class="cta-btn inline-flex items-center justify-center gap-2 bg-accent text-white font-semibold px-7 py-4 rounded-2xl shadow-cta text-base sm:text-lg w-full">
+        S'inscrire gratuitement
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECRETS -->
+<section class="bg-white border-y border-soft2/60 py-20 sm:py-28">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="max-w-2xl">
+      <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-bold">
+        <span class="w-8 h-px bg-accent"></span> En petit comité
+      </div>
+      <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05]">
+        On te dévoilera notre<br/>
+        <span class="text-accent">méthode secrète</span> et éprouvée.
+      </h2>
+    </div>
+
+    <div class="mt-14 grid md:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <article class="group bg-paper border border-soft2 rounded-3xl p-7 hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+        <div class="flex items-center justify-between">
+          <span class="num-tag text-5xl font-extrabold text-soft3 group-hover:text-accent transition">01</span>
+          <div class="w-11 h-11 rounded-2xl bg-soft1 flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#578cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+          </div>
+        </div>
+        <h3 class="mt-6 font-bold text-xl leading-snug">Créer des agents IA à forte valeur</h3>
+        <p class="mt-3 text-mute leading-relaxed">
+          Comment facilement créer des agents IA à forte valeur avec <span class="text-ink font-semibold">Claude</span> et <span class="text-ink font-semibold">n8n</span>, et vendre à coup sûr grâce à l'ajout d'interfaces.
+        </p>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="group bg-paper border border-soft2 rounded-3xl p-7 hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+        <div class="flex items-center justify-between">
+          <span class="num-tag text-5xl font-extrabold text-soft3 group-hover:text-accent transition">02</span>
+          <div class="w-11 h-11 rounded-2xl bg-soft1 flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#578cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v6H3zM3 15h18v6H3zM7 6h.01M7 18h.01"/></svg>
+          </div>
+        </div>
+        <h3 class="mt-6 font-bold text-xl leading-snug">Lancer son activité IA rentable</h3>
+        <p class="mt-3 text-mute leading-relaxed">
+          Le système éprouvé étape par étape pour lancer son activité IA <span class="text-ink font-semibold">rentable et pérenne</span>, sans compétences techniques.
+        </p>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="group bg-paper border border-soft2 rounded-3xl p-7 hover:border-accent transition-all duration-300 hover:-translate-y-1 hover:shadow-card">
+        <div class="flex items-center justify-between">
+          <span class="num-tag text-5xl font-extrabold text-soft3 group-hover:text-accent transition">03</span>
+          <div class="w-11 h-11 rounded-2xl bg-soft1 flex items-center justify-center">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#578cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12l2-2 4 4 8-8 4 4"/><path d="M17 4h4v4"/></svg>
+          </div>
+        </div>
+        <h3 class="mt-6 font-bold text-xl leading-snug">Signer des clients sans prospecter</h3>
+        <p class="mt-3 text-mute leading-relaxed">
+          La technique pour générer des leads, signer des clients et construire un <span class="text-ink font-semibold">revenu récurrent</span> sans prospecter ni démarcher.
+        </p>
+      </article>
+    </div>
+
+    <div class="mt-14 flex flex-col items-center gap-3">
+      <a href="#inscription-form" class="cta-btn inline-flex items-center justify-center gap-2 bg-ink text-white font-semibold px-8 py-4 rounded-full text-base sm:text-lg">
+        S'inscrire gratuitement
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <p class="text-sm text-mute">Dimanche 07 Juin 20h00 — Heure de Paris</p>
+    </div>
+  </div>
+</section>
+
+<!-- CADEAU EXCLUSIF -->
+<section class="py-20 sm:py-28 bg-paper">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="bg-ink text-white rounded-[2rem] p-8 sm:p-14 relative overflow-hidden">
+      <div class="absolute -top-24 -right-24 w-96 h-96 bg-accent rounded-full blur-3xl opacity-30"></div>
+      <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-accent2 rounded-full blur-3xl opacity-20"></div>
+
+      <div class="relative">
+        <span class="inline-block bg-accent text-white text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">🎁 Cadeau exclusif</span>
+        <h2 class="mt-5 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05]">
+          Durant l'Atelier, on t'offre<br/>
+          <span class="text-accent2">exclusivement et gratuitement&nbsp;:</span>
+        </h2>
+
+        <div class="mt-12 grid md:grid-cols-2 gap-5">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur">
+            <div class="flex items-start gap-4">
+              <div class="num-tag text-4xl font-extrabold text-accent2 leading-none">8</div>
+              <div>
+                <h3 class="font-bold text-xl leading-snug">Nos Agents IA les plus vendus</h3>
+                <p class="mt-2 text-white/70 leading-relaxed">
+                  Ceux qui nous ont rapporté <span class="text-white font-semibold">+630 000€ de chiffre d'affaires</span>. Clé en main — il te suffira de les copier-coller.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-7 backdrop-blur">
+            <div class="flex items-start gap-4">
+              <div class="w-12 h-12 rounded-xl bg-accent flex items-center justify-center shrink-0">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-bold text-xl leading-snug">Le Pack Ultime</h3>
+                <p class="mt-2 text-white/70 leading-relaxed">
+                  Maîtriser <span class="text-white font-semibold">Claude</span>, <span class="text-white font-semibold">Cowork</span> et <span class="text-white font-semibold">Code</span> et les workflows <span class="text-white font-semibold">n8n</span> parfaitement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10">
+          <a href="#inscription-form" class="cta-btn inline-flex items-center justify-center gap-2 bg-accent text-white font-semibold px-8 py-4 rounded-full text-base sm:text-lg shadow-cta">
+            Je réserve ma place
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDERS -->
+<section class="py-20 sm:py-28 bg-white border-y border-soft2/60">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8">
+    <div class="grid md:grid-cols-[1fr_1.3fr] gap-12 items-center">
+      <div class="relative">
+        <div class="absolute -top-6 -left-6 w-28 h-28 bg-coral rounded-full blur-2xl opacity-50 -z-10"></div>
+        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-soft3 rounded-full blur-2xl opacity-60 -z-10"></div>
+        <div class="aspect-[4/5] rounded-3xl bg-soft1 border border-soft2 overflow-hidden shadow-card flex items-center justify-center">
+          <img src="https://d1yei2z3i6k35z.cloudfront.net/14668949/69fc53b90aa278.82763580_defwfsdfdsfdsf.png" alt="Zeyneb et Maxim — fondateurs Naiom" class="w-full h-full object-cover" />
+        </div>
+      </div>
+
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-bold">
+          <span class="w-8 h-px bg-accent"></span> De 0 à Agence IA #1 France
+        </div>
+        <h2 class="mt-4 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05]">
+          Notre méthode,<br/><span class="text-accent">dévoilée.</span>
+        </h2>
+        <p class="mt-6 text-lg text-mute leading-relaxed">
+          Nous, c'est <span class="text-ink font-semibold">Zeyneb et Maxim</span>. On était à votre place : motivés, sans technique ni cap clair — avec pour idée que <span class="text-ink font-semibold">l'IA est une opportunité financière à ne pas manquer</span>.
+        </p>
+        <p class="mt-4 text-lg text-mute leading-relaxed">
+          Alors on a lancé notre agence IA sans filet et fini par trouver le système exact pour <span class="text-ink font-semibold">vendre des solutions IA de façon stable et pérenne</span>.
+        </p>
+
+        <div class="mt-10 grid sm:grid-cols-3 gap-4">
+          <div class="bg-paper border border-soft2 rounded-2xl p-5">
+            <div class="num-tag text-3xl font-extrabold text-accent">1M€+</div>
+            <div class="text-xs text-mute font-semibold uppercase tracking-wider mt-1">CA en 2025</div>
+          </div>
+          <div class="bg-paper border border-soft2 rounded-2xl p-5">
+            <div class="num-tag text-3xl font-extrabold text-accent">#1</div>
+            <div class="text-xs text-mute font-semibold uppercase tracking-wider mt-1">Agence IA France</div>
+          </div>
+          <div class="bg-paper border border-soft2 rounded-2xl p-5">
+            <div class="text-lg font-bold text-ink leading-tight">Decathlon, D&amp;G, PSG</div>
+            <div class="text-xs text-mute font-semibold uppercase tracking-wider mt-1">Clients</div>
+          </div>
+        </div>
+
+        <p class="mt-6 text-sm text-mute italic">— sans sacrifier notre vie de famille.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="inscription-form" class="py-20 sm:py-28 bg-paper">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 text-center">
+    <span class="inline-block bg-soft1 text-accent text-xs font-bold uppercase tracking-widest px-3 py-1.5 rounded-full">Places limitées</span>
+    <h2 class="mt-5 text-3xl sm:text-5xl font-extrabold tracking-tight leading-[1.05]">
+      Rejoins l'atelier privé<br/>
+      <span class="text-accent">avant qu'il ne soit complet.</span>
+    </h2>
+    <p class="mt-6 text-lg text-mute">Dimanche 07 Juin à 20h00 — Heure de Paris</p>
+
+    <div class="mt-10 bg-white border border-soft2 rounded-3xl p-6 sm:p-8 shadow-card text-left">
+      <form action="#" method="post" class="space-y-4">
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-mute mb-2">Prénom</label>
+          <input type="text" name="prenom" required placeholder="Ton prénom" class="w-full px-4 py-3.5 rounded-xl border border-soft2 bg-paper focus:outline-none focus:border-accent focus:ring-4 focus:ring-soft2 transition" />
+        </div>
+        <div>
+          <label class="block text-xs font-semibold uppercase tracking-wider text-mute mb-2">Email</label>
+          <input type="email" name="email" required placeholder="ton@email.com" class="w-full px-4 py-3.5 rounded-xl border border-soft2 bg-paper focus:outline-none focus:border-accent focus:ring-4 focus:ring-soft2 transition" />
+        </div>
+        <button type="submit" class="cta-btn w-full inline-flex items-center justify-center gap-2 bg-accent text-white font-semibold px-7 py-4 rounded-2xl shadow-cta text-base sm:text-lg">
+          Réserver ma place gratuitement
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+        </button>
+        <p class="text-xs text-mute text-center">100% gratuit. Aucune carte requise.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="border-t border-soft2/60 bg-white">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+      <a href="#" class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-lg bg-ink flex items-center justify-center">
+          <span class="text-paper font-extrabold tracking-tighter text-base">N</span>
+        </div>
+        <span class="font-bold text-ink tracking-tight">naiom<span class="text-accent">.</span></span>
+      </a>
+      <div class="flex items-center gap-5 text-sm text-mute">
+        <a href="https://inscription.naiomagency.com/mentions-dc784c7a-47f37ba3" class="hover:text-ink transition">Mentions Légales</a>
+        <span class="w-px h-3 bg-soft2"></span>
+        <a href="https://inscription.naiomagency.com/confidentialite-8ab58986-7530f538" class="hover:text-ink transition">Politique de confidentialité</a>
+      </div>
+    </div>
+    <p class="mt-6 text-xs text-mute leading-relaxed max-w-4xl">
+      Ce site ne fait pas partie du site YouTube™, Google™, Facebook™, Google Inc. ou Facebook Inc. De plus, ce site n'est PAS approuvé par YouTube™, Google™ ou Facebook™ en aucune façon. FACEBOOK™ est une marque de commerce de FACEBOOK, Inc. GOOGLE™ et YOUTUBE™ sont des marques de commerce de GOOGLE Inc.
+    </p>
+    <p class="mt-4 text-xs text-mute">www.masterclass.naiomagency.com © 2026 — All Rights Reserved</p>
+  </div>
+</footer>
+
+</body>
+</html>
