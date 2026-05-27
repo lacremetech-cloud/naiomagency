@@ -22,6 +22,7 @@
           card:'0 10px 40px -10px rgba(41,41,41,0.08)',
           cta: '0 12px 32px -8px rgba(87,140,255,0.45)',
           wa:  '0 12px 32px -8px rgba(37,211,102,0.45)',
+          video:'0 30px 80px -20px rgba(41,41,41,0.35)',
         },
       },
     },
@@ -33,17 +34,19 @@
   .num-tag { font-feature-settings:"tnum"; letter-spacing:.02em; }
   .cta-btn { transition: all .25s ease; }
   .cta-btn:hover { transform: translateY(-2px); }
-  .step-line::after {
-    content:''; position:absolute; left:1.45rem; top:3rem; bottom:-1.5rem;
-    width:2px; background: linear-gradient(180deg,#578cff,#d1e3ff 80%,transparent);
-  }
-  .step-line:last-child::after { display:none; }
   .check-pulse { animation: scale-in .6s ease forwards; }
   @keyframes scale-in {
     0% { transform: scale(0); opacity:0; }
     60% { transform: scale(1.15); opacity:1; }
     100% { transform: scale(1); }
   }
+  .video-shell { aspect-ratio: 16/9; }
+  .video-shell video { width:100%; height:100%; display:block; border-radius: 1.25rem; background:#000; }
+  .step-line::after {
+    content:''; position:absolute; left:1.45rem; top:3rem; bottom:-1.5rem;
+    width:2px; background: linear-gradient(180deg,#578cff,#d1e3ff 80%,transparent);
+  }
+  .step-line:last-child::after { display:none; }
 </style>
 </head>
 <body class="bg-paper text-ink">
@@ -75,7 +78,7 @@
     <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-soft3 rounded-full blur-3xl opacity-50"></div>
   </div>
 
-  <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-12 text-center">
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 pt-14 sm:pt-20 pb-10 text-center">
     <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent shadow-cta check-pulse">
       <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
     </div>
@@ -107,8 +110,30 @@
   </div>
 </section>
 
+<!-- VIDEO -->
+<section class="pb-4 sm:pb-8">
+  <div class="max-w-4xl mx-auto px-5 sm:px-8">
+    <p class="text-center text-sm sm:text-base font-semibold text-ink mb-5">
+      <span class="inline-block w-1.5 h-1.5 rounded-full bg-accent align-middle mr-2"></span>
+      Regarde cette vidéo avant l'atelier — message de <span class="text-accent">Zeyneb &amp; Maxim</span>
+    </p>
+
+    <div class="relative rounded-[1.5rem] bg-ink shadow-video p-2 sm:p-3">
+      <div class="video-shell relative rounded-[1.25rem] overflow-hidden bg-black">
+        <video
+          controls
+          playsinline
+          preload="metadata"
+          src="https://d1yei2z3i6k35z.cloudfront.net/14668949/69c107d6596929.87418677_VSLRemerciementMars26.mp4">
+          Ton navigateur ne supporte pas la lecture vidéo HTML5.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- STEPS -->
-<section class="py-12 sm:py-16">
+<section class="py-16 sm:py-20">
   <div class="max-w-3xl mx-auto px-5 sm:px-8">
     <div class="text-center mb-12">
       <div class="inline-flex items-center gap-2 text-xs uppercase tracking-widest text-accent font-bold">
@@ -122,7 +147,7 @@
     </div>
 
     <div class="space-y-6">
-      <!-- STEP 1 — WhatsApp (priority) -->
+      <!-- STEP 1 — WhatsApp -->
       <div class="step-line relative">
         <div class="bg-white border-2 border-whatsapp/30 rounded-3xl p-6 sm:p-8 shadow-card">
           <div class="flex items-start gap-5">
@@ -206,7 +231,7 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="mt-12 border-t border-soft2/60 bg-white">
+<footer class="border-t border-soft2/60 bg-white">
   <div class="max-w-5xl mx-auto px-5 sm:px-8 py-10">
     <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
       <a href="#" class="flex items-center gap-2">
